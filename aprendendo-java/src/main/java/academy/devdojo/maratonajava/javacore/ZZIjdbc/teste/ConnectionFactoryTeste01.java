@@ -11,12 +11,13 @@ public class ConnectionFactoryTeste01 {
     public static void main(String[] args) {
         Producer producer = Producer.builder().name("Studio Deen").build();
         Producer producerToUpdate = Producer.builder().id(4).name("DreamWorks").build();
-        List<Producer> producers = ProducerService.findAll();
+//        List<Producer> producers = ProducerService.findAll();
 //        List<Producer> producers1 = ProducerService.findByName("Mad");
 //        ProducerService.save(producer);
 //        ProducerService.delete(1);
 //        ProducerService.update(producerToUpdate);
 //        log.info("Producers found '{}'", producers1);
-        log.info("Producers found '{}'", producers);
+//        log.info("Producers found '{}'", producers);
+        ProducerService.showProducerMetadata();
     }
 }
